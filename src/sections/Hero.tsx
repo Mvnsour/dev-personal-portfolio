@@ -30,6 +30,8 @@ export const Hero = () => {
               backgroundColor: '#20B2A6',
               left: dot.left,
               top: dot.top,
+              animation: `slow-drift ${15 + Math.random() * 20}s ease-in-out infinite`,
+              animationDelay: `${Math.random() * 5}s` 
             }}
           />
         ))}
