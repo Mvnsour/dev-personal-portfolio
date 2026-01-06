@@ -63,9 +63,9 @@ export const Hero = () => {
               <p
               className='text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-200'
               >
-                I help Web3 teams turn smart contracts into reliable, production-ready dApps.
-                From wallet connections to on-chain interactions, I build clear and usable
-                frontends using React, Next.js, TypeScript and modern Web3 tooling.
+                Web3 frontend engineer focused on building clean, reliable dApps.
+                I specialize in React, Next.js, and TypeScript, with deep experience
+                integrating wallets, smart contracts, and on-chain data
               </p>
             </div>
           </div>
