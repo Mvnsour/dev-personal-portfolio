@@ -1,5 +1,7 @@
 /* eslint-disable react-hooks/purity */
 import { useMemo } from 'react';
+import { Button } from '@/components/Button';
+import { ArrowRight } from 'lucide-react';
 
 export const Hero = () => {
 
@@ -45,7 +47,7 @@ export const Hero = () => {
             <div className='animate-fade-in'>
               <span className='inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm text-primary'>
                 <span className='w-2 h-2 bg-primary rounded-full animate-pulse' />
-                Web3 Frontend Engineer • dApp UX
+                Web3 Frontend Developer
               </span>
             </div>
 
@@ -63,11 +65,20 @@ export const Hero = () => {
               <p
               className='text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-200'
               >
-                Web3 frontend engineer focused on building clean, reliable dApps.
-                I specialize in React, Next.js, and TypeScript, with deep experience
-                integrating wallets, smart contracts, and on-chain data
+                Web3 Frontend Developer building decentralized 
+                applications with React, Next.js, and TypeScript. I specialize in smart 
+                contract integrations, multi-chain dApps, and creating user-friendly 
+                interfaces for blockchain operations.
               </p>
             </div>
+
+            {/* CTAs */}
+            <Button size='lg'>
+              Contact Me <ArrowRight className='w-5 h-5'/>
+            </Button>
+            <button>
+              Download Resume
+            </button>
           </div>
           {/* Profile Image - Right Column */}
         </div>
