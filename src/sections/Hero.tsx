@@ -3,6 +3,8 @@ import { useMemo } from 'react';
 import { Button } from '@/components/Button';
 import { ArrowRight } from 'lucide-react';
 import { AnimatedBorderButton } from '@/components/AnimatedBorderButton';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faLinkedinIn, faGithub, faBluesky, faXTwitter } from '@fortawesome/free-brands-svg-icons'
 
 export const Hero = () => {
 
@@ -79,6 +81,27 @@ export const Hero = () => {
                 Contact Me <ArrowRight className='w-5 h-5'/>
               </Button>
               <AnimatedBorderButton />
+            </div>
+
+            {/* Social links */}
+            <div className='flex items-center gap-4 animate-fade-in animation-delay-400'>
+              <span className='text-sm text-muted-foreground'> Follow me: </span>
+              {[
+                {icon: faLinkedinIn, href: 'https://www.linkedin.com/in/mansourmbengue/'},
+                {icon: faGithub, href: 'https://github.com/Mvnsour'},
+                {icon: faBluesky, href: 'https://bsky.app/profile/0xmchain.bsky.social'},
+                {icon: faXTwitter, href: 'https://x.com/0xmchain'},
+              ].map((social, i) => (
+                <a 
+                  key={i} 
+                  href={social.href} 
+                  target='_blank' 
+                  rel='noopener noreferrer'
+                  className='p-2 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all duration-300'
+                >
+                  <FontAwesomeIcon icon={social.icon} className='w-25 h-25'/>
+                </a>
+              ))}
             </div>
           </div>
           {/* Profile Image - Right Column */}
