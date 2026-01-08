@@ -99,7 +99,7 @@ export const Hero = () => {
                   rel='noopener noreferrer'
                   className='p-2 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all duration-300'
                 >
-                  <FontAwesomeIcon icon={social.icon} className='w-25 h-25'/>
+                  <FontAwesomeIcon icon={social.icon} className='text-sm'/>
                 </a>
               ))}
             </div>
