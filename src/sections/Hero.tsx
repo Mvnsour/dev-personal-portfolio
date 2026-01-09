@@ -6,6 +6,28 @@ import { AnimatedBorderButton } from '@/components/AnimatedBorderButton';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedinIn, faGithub, faBluesky, faXTwitter } from '@fortawesome/free-brands-svg-icons'
 
+const skills = [
+  'React',
+  'Next.js',
+  'TypeScript',
+  'Tailwind CSS',
+  'Viem',
+  'Wagmi',
+  'RainbowKit',
+  'Wallet Integration',
+  'Solidity',
+  'Foundry',
+  'Smart Contract Integration',
+  'Chainlink',
+  'ERC20',
+  'Multi-chain Development',
+  'GraphQL',
+  'Vitest',
+  'Playwright',
+  'Fleek',
+  'Git',
+]
+
 export const Hero = () => {
 
   const greenDots = useMemo(
@@ -131,6 +153,19 @@ export const Hero = () => {
                     </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+        {/* Skills */}
+        <div className='mt-20 animate-fade-in animation-delay-600'>
+          <p className='text-sm text-muted-foreground mb-6 text-center'>Technologies I work with:</p>
+          <div className='relative overflow-hidden'>
+            <div className='flex animate-marquee'>
+              {[...skills,  ...skills].map((skill, idx) =>
+              <div key={idx} className='shrink-0 px-8 py-4 '>
+                <span className='text-xl text-muted-foreground/50 font-semibold hover:text-muted-foreground transition-colors'>{skill}</span>
+              </div>
+              )}
             </div>
           </div>
         </div>
