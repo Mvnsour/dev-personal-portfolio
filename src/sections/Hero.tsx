@@ -75,13 +75,13 @@ export const Hero = () => {
               </span>
             </div>
             {/* Headline */}
-            <div className='space-y-6'>
-              <h1 className='text-5-xl m:text-6xl lg:text-7xl font-bold leading-tight animate-fade-in animation-delay-100'>
-                Turning <span className='text-primary glowtext'>smart contracts</span>
+            <div className='space-y-4'>
+              <h1 className='text-5xl md:text-6xl lg:text-7xl font-bold leading-tight animate-fade-in animation-delay-100'>
+                Turning <span className='text-primary glow-text'>smart contracts</span>
                 <br />
                 into usable
                 <br />
-                <span className='font-serif italicfont-normal text-white'>
+                <span className='font-serif italic font-normal text-white'>
                   Web3 products.
                 </span>
               </h1>
